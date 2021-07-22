@@ -1,0 +1,63 @@
+# GET ALL EMPLOYEE
+GET http://localhost:3000/employees 
+
+
+
+###
+# GET A SINGLE EMPLOYEE
+GET http://localhost:3000/employees/{INPUT_USER_ID_HERE}
+
+
+# CREATE A SINGLE EMPLOYEE
+###
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "country": ""
+}
+
+
+
+# DELETE A SINGLE EMPLOYEE
+###
+
+# DELETE  http://localhost:3000/employees/60f86a6e6ff9fb2d8c3d4ccc
+DELETE  http://localhost:3000/employees/{INPUT_USER_ID_HERE}
+
+
+
+# UPDATE A SINGLE EMPLOYEE
+###
+PATCH  http://localhost:3000/employees/{INPUT_USER_ID}
+Content-Type: application/json
+
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "country": ""
+}
+
+
+###
+# GETTING ALL THE JOB ROLES
+GET http://localhost:3000/role
+
+###
+# GETTING ALL PROJECT
+GET http://localhost:3000/project
+
+###
+#GETTiNG A EMPLOYEES ROLE
+GET http://localhost:3000/employeerole/{INPUT_USER_ID}
+
+
+###
+# GETTING A EMPLOYEES PROJECT
+GET http://localhost:3000/employeeproject/{INPUT_USER_ID}
